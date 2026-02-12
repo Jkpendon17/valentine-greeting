@@ -1,0 +1,67 @@
+body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4); /* pink gradient */
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #333;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #444;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #e63950;
+        }
+
+        /* Floating emojis */
+        .float {
+            position: absolute;
+            bottom: -50px;
+            font-size: 28px;
+            animation: floatUp 6s ease-in forwards;
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateX(0) translateY(0); opacity: 1; }
+            25% { transform: translateX(-20px) translateY(-150px); opacity: 0.8; }
+            50% { transform: translateX(20px) translateY(-300px); opacity: 0.6; }
+            75% { transform: translateX(-15px) translateY(-450px); opacity: 0.3; }
+            100% { transform: translateX(10px) translateY(-650px); opacity: 0; }
+        }
+
+        /* Glowing name */
+        .glow-name {
+            font-size: 50px;
+            margin-top: 40px;
+            color: white;
+            opacity: 0;
+            animation: glow 2s ease-in-out forwards;
+        }
+
+        @keyframes glow {
+            0% { opacity: 0; text-shadow: 0 0 0px white; transform: scale(0.5); }
+            50% { opacity: 1; text-shadow: 0 0 20px #fff, 0 0 40px #ff4d6d; transform: scale(1.2); }
+            100% { text-shadow: 0 0 30px #fff, 0 0 60px #ff4d6d; transform: scale(1); }
+        }
