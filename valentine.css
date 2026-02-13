@@ -54,8 +54,9 @@ body {
         /* Glowing name */
         .glow-name {
             font-size: 50px;
+            font-weight: bold;
             margin-top: 40px;
-            color: white;
+            color: rgb(245, 240, 240);
             opacity: 0;
             animation: glow 2s ease-in-out forwards;
         }
