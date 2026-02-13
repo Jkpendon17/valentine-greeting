@@ -17,7 +17,7 @@
             let names = [
                 "Elle 💕",
                 "Diva 😌",
-                "Cutie Patootie 😂",
+                "Crampy Legs 😂",
                 "Future RPh 👀",
                 "Sunshine Girl ☀️",
               
